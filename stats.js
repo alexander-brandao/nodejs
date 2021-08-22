@@ -18,7 +18,7 @@ const stats = {
 console.clear()
 console.table(stats)
 
-log('rodando..')
+log(`${JSON.stringify(stats)}\n`)
 
 
 }, 1000)
