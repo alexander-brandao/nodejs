@@ -1,5 +1,7 @@
 const os = require('os')
 
+setInterval(() =>{
+
 
 const { freemem, totalmem } = os
 
@@ -12,4 +14,10 @@ const stats = {
     total: `${total} MB`,
     usage: `${percents} %`
 }
-console.log(stats)
+console.clear()
+console.table(stats)
+
+
+}, 1000)
+
+// parei em 26min
