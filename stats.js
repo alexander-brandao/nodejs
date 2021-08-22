@@ -1,4 +1,5 @@
 const os = require('os')
+const log = require('./logger')
 
 setInterval(() =>{
 
@@ -16,6 +17,8 @@ const stats = {
 }
 console.clear()
 console.table(stats)
+
+log('rodando..')
 
 
 }, 1000)
